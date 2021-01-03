@@ -1,8 +1,8 @@
 import setuptools
 
 setuptools.setup(
-    name='Hyrule-Compendium',
-    version='0.0.2',
+    name='HyruleCompendium',
+    version='0.0.3',
     author='Shaunik Musukula',
     author_email='shaunik.musukula@gmail.com',
     description='Python Wrapper for the Hyrule Compendium API',
