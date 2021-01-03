@@ -8,7 +8,9 @@
 It's recommended that you read the [API documentation](https://github.com/Hyrule-Compendium-API/Hyrule-Compendium-API/blob/master/README.md) before getting started.
 
 ### Installation
-```pip install Hyrule-Compendium```
+```
+pip install Hyrule-Compendium
+```
 
 ### Docs
 
