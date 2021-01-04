@@ -4,6 +4,9 @@
 <p align="center">This package comes with a few functions to help work with the Hyrule Compendium API and get all the data you want in a jiffy!</p>
 </p>
 
+### Project(s) Made With This
+- [Hyrule Compendium Discord Bot](https://github.com/shaunikm/HyruleCompendium-Bot)
+
 ### Recommendation
 It's recommended that you read the [API documentation](https://github.com/Hyrule-Compendium-API/Hyrule-Compendium-API/blob/master/README.md) before getting started.
 
