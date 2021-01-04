@@ -9,7 +9,7 @@ It's recommended that you read the [API documentation](https://github.com/Hyrule
 
 ### Installation
 ```
-pip install Hyrule-Compendium
+pip install HyruleCompendium
 ```
 
 ### Docs
