@@ -101,3 +101,6 @@ None
 ```python
 pprint(getAllData())
 ```
+
+## Author
+Made with awesomness by [@shaunikm](https://github.com/shaunikm).
