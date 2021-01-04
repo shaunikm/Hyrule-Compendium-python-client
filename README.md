@@ -5,7 +5,7 @@
 </p>
 
 ### Recommendation
-It's recommended that you read the [API documentation](https://github.com/Hyrule-Compendium-API/Hyrule-Compendium-API/blob/master/README.md) before getting started.
+It's recommended that you read the [API documentation](https://github.com/gadhagod/Hyrule-Compendium-API/blob/master/README.md) before getting started.
 
 ### Installation
 ```
