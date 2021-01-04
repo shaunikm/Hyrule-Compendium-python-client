@@ -2,6 +2,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" width="10%">
 <h3 align="center">Python Package for the Hyrule Compendium API<h3>
 <p align="center">This package comes with a few functions to help work with the Hyrule Compendium API and get all the data you want in a jiffy!</p>
+<sub>By <a href="https://github.com/shaunikm">Shaunik Musukula</a></sub>
 </p>
 
 ### Project(s) Made With This
