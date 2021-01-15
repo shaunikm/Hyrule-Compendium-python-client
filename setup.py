@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='HyruleCompendium',
-    version='0.0.3',
+    version='0.1.0',
     author='Shaunik Musukula',
     author_email='shaunik.musukula@gmail.com',
     description='Python Wrapper for the Hyrule Compendium API',

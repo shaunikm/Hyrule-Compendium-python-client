@@ -1,38 +1,36 @@
 import requests
-from pprint import pprint
 import json
 
+class compendium(object):
+    def __init__(self, url="https://botw-compendium.herokuapp.com/api/v1"):
+        self.url = url
 
-def categoryList():
-    return ["creatures", "equipment", "materials", "monsters", "treasure"]
+    def categoryList(self):
+        return ["creatures", "equipment", "materials", "monsters", "treasure"]
 
-
-def getCategory(categoryName: str):
-    if categoryName.lower() in categoryList():
+    def getCategory(self, categoryName: str):
         categoryData = requests. \
-            get(f"https://botw-compendium.herokuapp.com/api/v1/category/{categoryName.lower()}"). \
+            get(f"{self.url}/category/{categoryName.lower()}"). \
             json()
-    else:
-        raise ValueError("Invalid category. Run categoryList() for a list of valid categories.")
+        return categoryData["data"]
 
-    return categoryData["data"]
+    def getEntry(self, entry):
+        try:
+            target = entry.replace(" ", "%20").lower()
+        except:
+            target = entry
+        try:
+            entryData = requests. \
+                get(f"{self.url}/entry/{target}"). \
+                json()
+        except json.decoder.JSONDecodeError:
+            raise ValueError("Invalid entry.")
 
+        return entryData["data"]
 
-def getEntry(entryName: str):
-    entryName.replace(" ", "%20")
-    try:
-        entryData = requests. \
-            get(f"https://botw-compendium.herokuapp.com/api/v1/entry/{entryName.lower()}"). \
+    def getAllData(self):
+        allData = requests. \
+            get(self.url). \
             json()
-    except json.decoder.JSONDecodeError:
-        raise ValueError("Invalid entry.")
 
-    return entryData["data"]
-
-
-def getAllData():
-    allData = requests. \
-        get("https://botw-compendium.herokuapp.com/api/v1"). \
-        json()
-
-    return allData["data"]
+        return allData["data"]
